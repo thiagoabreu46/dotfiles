@@ -1,0 +1,64 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "bad-wolf"
+[theme.overrides]
+idle_bg = "#151617"
+idle_fg = "#f73156"
+
+[icons]
+icons = "awesome4"
+[icons.overrides]
+bat = ["|E|", "|_|", "|=|", "|F|"]
+bat_charging = "|^| "
+
+[[block]]
+block = "cpu"
+info_cpu = 20
+warning_cpu = 50
+critical_cpu = 90
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "available"
+alert_unit = "GB"
+interval = 30
+warning = 20.0
+alert = 10.0
+format = " $icon root: $available.eng(w:2) "
+[block.theme_overrides]
+idle_bg = "#eb4034"
+idle_fg = "#000000"
+
+
+[[block]]
+block = "memory"
+format = " $icon $mem_total_used_percents.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+[block.theme_overrides]
+idle_bg = "#eb4034"
+idle_fg = "0000000"
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %d/%m %R') "
+
+[[block]]
+block = "custom"
+command = "echo \uf011" # assumes fontawesome icons
+interval = "once"
+[[block.click]]
+button = "left"
+cmd = "systemctl `echo -e 'suspend\npoweroff\nreboot' | dmenu`"
+[block.theme_overrides]
+idle_bg = "#eb4034"
+idle_fg = "0000000"
+
