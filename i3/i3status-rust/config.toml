@@ -14,13 +14,6 @@ bat_charging = "|^| "
 
 
 
-[[block]]
-block = "github"
-token = "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"
-format = " $icon $total.eng(w:1) "
-info = ["total"]
-warning = ["mention","review_requested"]
-hide_if_total_is_zero = true
 
 [[block]]
 block = "music"
