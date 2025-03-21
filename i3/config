@@ -120,11 +120,11 @@ bar {
     status_command ~/.cargo/bin/i3status-rs ~/.config/i3status-rust/config.toml
     colors {
         separator #666666
-        background #e38436
+        background #871f36
         statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
+        focused_workspace #871f36 #871f36 #871f36
         active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
+        inactive_workspace #871f36 #871f36 #871f36
         urgent_workspace #2f343a #900000 #ffffff
     }
     tray_output none
@@ -132,7 +132,7 @@ bar {
 
 
 
-exec_always feh --bg-scale ~/Pictures/wallpaper/wallpaper.jpg
+exec_always feh --bg-scale ~/Pictures/wallpaper/wallhaven1.jpg
 #exec_always --no-startup-id ~/.config/i3/autostart/discord.zsh
 exec_always --no-startup-id picom 
 default_border pixel 0 
