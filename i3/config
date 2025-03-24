@@ -132,8 +132,8 @@ bar {
 
 
 
-exec_always feh --bg-scale ~/Pictures/wallpaper/wallhaven1.jpg
-#exec_always --no-startup-id ~/.config/i3/autostart/discord.zsh
+exec_always feh --bg-scale --randomize  ~/Pictures/wallpaper/*
+exec_always --no-startup-id ~/.config/i3/autostart/discord.zsh
 exec_always --no-startup-id picom 
 default_border pixel 0 
 gaps inner 7
