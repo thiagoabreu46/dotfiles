@@ -2,13 +2,13 @@
 
 /* appearance */
 static const unsigned int borderpx = 3; /* border pixel of windows */
-static const unsigned int gappx = 14;    /* gaps between windows */
+static const unsigned int gappx = 16;    /* gaps between windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
 static const int vertpad = 10;
 static const int sidepad = 10;
-static const char *fonts[] = {"hack:size=11", "NotoColorEmoji:pixelsize=14:antialias=true:autohint=true"};
+static const char *fonts[] = {"hack:size=11", "NotoColorEmoji:pixelsize=12", "NotoEmoji:pixelsize=12"};
 static const char dmenufont[] = "hack:size=10";
 static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
@@ -30,12 +30,13 @@ static const char *const autostart[] = {
 };
 
 /* tagging */
-static const char *tags[] = {"󰓓", "", "", "", ""};
+static const char *tags[] = {"", "", "", "", "", ""};
 
 static const Rule rules[] = {
     /* xprop(1):
      *	WM_CLASS(STRING) = instance, class
      *	WM_NAME(STRING) = title
+static const char *fonts[] = {"hack:size=10"};
      */
     /* class      instance    title       tags mask     isfloating   monitor */
     {"Gimp", NULL, NULL, 0, 1, -1},
@@ -88,6 +89,8 @@ static const Key keys[] = {
     {MODKEY, 			    XK_b,      togglebar,      {0}},
     {MODKEY,                        XK_j,      focusstack,     {.i = +1}},
     {MODKEY, 			    XK_k,      focusstack,     {.i = -1}},
+    { 0,			    XK_Print,  spawn, 	       SHCMD("~/.config/dwm/scripts/print.sh") },
+    { ShiftMask,                    XK_Print,  spawn, 	       SHCMD("~/.config/dwm/scripts/printbox.sh") },
     {MODKEY, XK_i, incnmaster, {.i = +1}},
     {MODKEY | ShiftMask, XK_d, incnmaster, {.i = -1}},
     {MODKEY, XK_h, setmfact, {.f = -0.05}},
