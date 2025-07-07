@@ -6,7 +6,7 @@
 #define COL3                            "\x0e" /* mail block - syncing */
 #define COL4                            "\x0f" /* mail block - frozen */
 
-#define SCRIPT(name)                    "/home/ashish/.scripts/"name
+#define SCRIPT(name)                    "/home/thiago/.config/scripts/"name
 #define TERMCMD(...)                    cspawn((char *[]){ "st", "-e", __VA_ARGS__, NULL })
 
 #define SPRINTF(str, ...)               ({ \

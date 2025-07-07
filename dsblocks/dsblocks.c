@@ -7,7 +7,6 @@
 #include <time.h>
 #include <unistd.h>
 #include <X11/Xlib.h>
-
 #include "shared.h"
 
 #define LOCKFILE                        "/var/local/dsblocks/dsblocks.pid"

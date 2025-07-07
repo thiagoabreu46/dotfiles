@@ -3,14 +3,14 @@
 #include "../util.h"
 #include "volume.h"
 
-#define ICONhn                          COL1 "" COL0
-#define ICONhm                          COL2 "" COL0
-#define ICONsn                          COL1 "" COL0
-#define ICONsm                          COL2 "" COL0
+#define ICONhn                          COL1 "󰕾" COL0
+#define ICONhm                          COL2 "󰕾" COL0
+#define ICONsn                          COL1 "󰕾" COL0
+#define ICONsm                          COL2 "󰕾" COL0
 
 #define PULSEINFO                       (char *[]){ SCRIPT("pulse_info.sh"), NULL }
 
-#define PAVUCONTROL                     (char *[]){ "pavucontrol-qt", NULL }
+#define PULSEMIXER                      (char *[]){ "pulsemixer", NULL }
 #define NORMALIZEVOLUME                 (char *[]){ SCRIPT("pulse_normalize.sh"), NULL }
 #define TOGGLEMUTE                      (char *[]){ "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL }
 
@@ -46,7 +46,7 @@ volumec(int button)
                         cspawn(NORMALIZEVOLUME);
                         break;
                 case 3:
-                        cspawn(PAVUCONTROL);
+                        cspawn(PULSEMIXER);
                         break;
         }
 }
