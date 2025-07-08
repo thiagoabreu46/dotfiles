@@ -1,0 +1,31 @@
+[OPTIONS]
+textnumberforeground=#d7d7d7
+width=599
+textfont=Monocraft,100,normal,regular
+tabcols=8
+textnumberbackground=#1e1e1e
+hilitematchtime=3000
+hidestatus=0
+wordwrap=0
+height=737
+searchpath=
+textforeground=#d7d7d7
+textselbackground=#31567c
+texthiliteforeground=#d7d7d7
+textcursor=#d7d7d7
+texthilitebackground=#ff8080
+wrapcols=80
+linesnum=0
+hidetoolbar=0
+stripreturn=0
+textbackground=#1e1e1e
+textselforeground=Gray100
+
+[SETTINGS]
+tippause=500
+basecolor=#191919
+tiptime=10000
+
+[Recent Files]
+FILE1="/home/thiago/.dwm/autostart_blocking.sh "
+
