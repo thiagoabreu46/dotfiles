@@ -1,19 +1,20 @@
 [OPTIONS]
-height=560
+height=710
 mount_warn=1
 toolstoolbar=1
 folder_warn=1
 panel_view=3
-width=990
+width=1304
+confirm_drag_and_drop=1
+root_warn=0
 preserve_date_warn=1
 confirm_delete=1
 no_script=0
-root_warn=0
+su_cmd="su -c \'nohup xfe >& /dev/null &\'"
 auto_save_layout=1
 use_trash_bypass=0
 sudo_cmd=sudo -b xfe
 root_mode=1
-su_cmd="su -c \'nohup xfe >& /dev/null &\'"
 confirm_overwrite=1
 paneltoolbar=1
 confirm_delete_emptydir=1
@@ -27,43 +28,16 @@ root_auth=0
 vert_panels=1
 use_trash_can=1
 confirm_trash=1
-treetwopanels_lpanel_pct=0.372
+treetwopanels_lpanel_pct=0.384
 status=1
 treepanel_tree_pct=0.2
 treetwopanels_tree_pct=0.186
 generaltoolbar=1
-xfv_replaced=1
 locationbar=1
-confirm_drag_and_drop=1
+xfv_replaced=1
 
-[SETTINGS]
-listforecolor=#d7d7d7
-iconpath=/usr/share/xfe/icons/default-theme
-hilitecolor=#261900
-single_click=0
-highlightcolor=#221600
-wheellines=5
-bordercolor=DimGray
-relative_resize=1
-listbackcolor=#bc7f07
-scrollbarsize=12
-shadowcolor=#9d6906
-tippause=500
-scrollbarcolor=#593b01
-forecolor=#d7d7d7
-basecolor=#724c02
-time_format=%x %X
-show_pathlinker=1
-selbackcolor=#261900
-smooth_scroll=1
-use_clearlooks=1
-attentioncolor=Red
-backcolor=#6e4903
-tiptime=10000
-selforecolor=Gray100
-pbarcolor=#593b0
-save_win_pos=0
-file_tooltips=1
+[HISTORY]
+filter=*:
 
 [KEYBINDINGS]
 search_prev=Shift-Ctrl-G
@@ -141,23 +115,23 @@ empty_trash_can=Ctrl-Del
 rotate_left=Ctrl-L
 
 [RIGHT PANEL]
-type_size=0
+type_size=5
 deldate_size=150
 origpath_size=200
 liststyle=0
-attr_size=0
-user_size=0
+attr_size=5
+user_size=2
 hiddenfiles=1
 dirs_first=1
-ext_size=0
-grou_size=0
-modd_size=0
+ext_size=5
+grou_size=2
+modd_size=8
 ignore_case=1
 sort_func=ascendingCase
 showthumbnails=0
 name_size=75
 lastdir=/home/thiago
-size_size=0
+size_size=4
 
 [PROGS]
 txteditor=/bin/nvim
@@ -167,23 +141,52 @@ xterm=st
 txtviewer=/bin/nvim
 
 [LEFT PANEL]
-type_size=1
+type_size=26
 deldate_size=150
 origpath_size=200
 liststyle=0
-attr_size=1
-user_size=24
+attr_size=26
+user_size=14
 hiddenfiles=1
 dirs_first=1
-ext_size=1
-grou_size=1
-modd_size=1
+ext_size=26
+grou_size=14
+modd_size=40
 ignore_case=1
 sort_func=ascendingCase
 showthumbnails=1
 name_size=75
 lastdir=/home/thiago
-size_size=1
+size_size=16
+
+[SETTINGS]
+listforecolor=#d7d7d7
+iconpath=/usr/share/icons/custom-icons
+hilitecolor=#261900
+single_click=0
+highlightcolor=#221600
+wheellines=5
+bordercolor=DimGray
+relative_resize=1
+listbackcolor=#bc7f07
+scrollbarsize=12
+shadowcolor=#9d6906
+tippause=500
+scrollbarcolor=#593b01
+forecolor=#d7d7d7
+basecolor=#724c02
+time_format=%x %X
+show_pathlinker=1
+selbackcolor=#261900
+smooth_scroll=1
+use_clearlooks=1
+attentioncolor=Red
+backcolor=#6e4903
+tiptime=10000
+selforecolor=Gray100
+pbarcolor=#593b0
+save_win_pos=0
+file_tooltips=1
 
 [FILETYPES]
 epub=fbreader,fbreader,;ePub eBook;epub_32x32.png;epub_16x16.png;;
