@@ -36,7 +36,6 @@ export PATH="/bin:/usr/local/bin:/usr/bin:/home/thiago/.cargo/bin"
 #melhor secao
 
 alias ls="eza -a --icons=always"
-alias portage="sudo nvim /etc/portage/"
 alias portage-updateN="sudo emerge -avgu --deep --newuse @world"
 alias portage-updateC="sudo emerge -avgu --deep --changed-use @world"
 alias portageI="sudo emerge -avg"
