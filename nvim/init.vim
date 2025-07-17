@@ -1,5 +1,6 @@
 set number
 set noautoindent  
+set syntax 
 
 "cores"
 colorscheme gruvbox-material
