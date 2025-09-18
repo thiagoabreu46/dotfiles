@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monocraft:pixelsize=14:antialias=true:autohint=true";
+static char *font = "FuraMono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /* How to align the content in the window when the size of the terminal
