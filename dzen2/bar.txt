@@ -1,0 +1,1 @@
+^bg(#0a0a0a)^fg(#db8f8f)^i(back.xbm) TEXT ^bg(#db8f8f)^fg(#0a0a0a)^i(back.xbm) ANOTHER TEXT ^bg(#0a0a0a)^fg(#db8f8f)^i(back.xbm) YET ANOTHER ^bg(#db8f8f)^fg(#0a0a0a)^i(back.xbm) END ^bg(#0a0a0a)^fg(#db8f8f)^i(back.xbm) Cast ^bg(#db8f8f)^fg(#0a0a0a)^i(back.xbm) Its ^bg(#0a0a0a)^fg(#db8f8f)^i(back.xbm) Almost
