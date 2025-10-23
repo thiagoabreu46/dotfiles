@@ -1,0 +1,3 @@
+/home/thiago/docs/books/logic/Structure and Interpretation of Computer Programs, 2nd ed. - sicp.pdf
+/home/thiago/docs/references/refcard.pdf
+/home/thiago/docs/books/lisp/Livro_LISP_Free.pdf

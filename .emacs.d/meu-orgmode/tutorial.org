@@ -1,0 +1,10 @@
+#+title: Título
+#+author: Thiago Abreu
+
+
+* Seja muito bem vindo ao Org-Mode!
+** Conteúdo:
+*Representando o texto em modo bold*
+/Em modo itálico/
+/*Combinados*/
++Bonus de strikethrough+
