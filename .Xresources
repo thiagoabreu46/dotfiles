@@ -1,0 +1,10 @@
+Xcursor.theme: redglass
+URxvt*font: xft:TerminessNerdFont:size=13
+URxvt*savelines: 1687909
+dzen2.font: InconsolataNerdFont
+urxvt.perl-ext-common: default,resize-font
+URxvt.keysym.C-Shift-J:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+URxvt.scrollBar_right: true
