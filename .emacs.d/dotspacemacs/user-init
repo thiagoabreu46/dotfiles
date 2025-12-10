@@ -1,2 +1,0 @@
-(custom-set-variables '(spacemacs-custom-colors
-		      '((bg1 . "#452375")))
