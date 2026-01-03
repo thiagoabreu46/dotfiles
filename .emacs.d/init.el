@@ -10,7 +10,6 @@
 (load "~/.emacs.d/config/packages.el")
 (load "~/.emacs.d/config/basic.el")
 (load "~/.emacs.d/config/theme.el")
-(load "~/.emacs.d/config/eaf.el")
 (load "~/.emacs.d/config/nsxiv.el")
 (load "~/.emacs.d/config/variables.el")
 
