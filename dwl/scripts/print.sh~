@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mkdir -p ~/pics/screenshots  && flameshot screen -n 0 -c -p ~/pics/screenshots/screenshot.png

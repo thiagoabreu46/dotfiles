@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#ICON=e
+MPC=/usr/sbin/mpc
+
+echo ""  | $MPC current
+

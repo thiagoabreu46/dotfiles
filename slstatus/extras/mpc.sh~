@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+MPC=/usr/sbin/mpc
+ICON=
+
+cat $ICON | $MPC current 

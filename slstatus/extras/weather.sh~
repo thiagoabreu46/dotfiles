@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+GET=/usr/sbin/curl
+ARG="format=3"
+
+$get wttr.in/Brasil?$ARG
