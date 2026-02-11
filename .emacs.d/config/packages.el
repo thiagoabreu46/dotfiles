@@ -7,7 +7,7 @@
 (setq package-selected-packages '(lsp-mode yasnippet lsp-treemacs helm-lsp
 				  projectile rainbow-mode vterm hydra flycheck
 				  company avy which-key helm-xref dap-mode emms
-				  vterm ))
+				  vterm grandshell-theme ))
 					   
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)

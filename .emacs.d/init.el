@@ -6,14 +6,13 @@
 ;; Carregar demais configurações ;;
 
 (push "~/.emacs.d/config/" load-path)
+(push "~/.emacs.d/themes/" load-path)
 (load "~/.emacs.d/config/ide-mode.el")
 (load "~/.emacs.d/config/packages.el")
 (load "~/.emacs.d/config/basic.el")
 (load "~/.emacs.d/config/theme.el")
-(load "~/.emacs.d/config/nsxiv.el")
-(load "~/.emacs.d/config/variables.el")
 
-;; Utilitários úteis pra caralho!!
+;; Utilitários muito, mais muito bons!!
 
 (load "~/.emacs.d/config/thiago-media.el")
 
@@ -31,9 +30,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(avy company dap-mode emms flycheck helm-lsp helm-xref hydra lsp-mode
-	 lsp-treemacs multi-vterm projectile rainbow-mode vterm vterm
-	 which-key yasnippet))
+   '(avy company dap-mode emms flycheck helm-lsp helm-xref hydra
+	 linum-relative lsp-mode lsp-treemacs multi-vterm projectile
+	 rainbow-mode vterm vterm which-key yalinum yasnippet))
  '(warning-suppress-log-types
    '((files missing-lexbind-cookie "~/.emacs.d/config/packages.el")
      (files missing-lexbind-cookie

@@ -1,12 +1,13 @@
-(add-hook 'prog-mode-hook 'linum-relative-mode)
-(add-hook 'major-mode-hook 'linum-relative-mode)
+(add-hook 'prog-mode-hook 'line-number-mode)
+(add-hook 'major-mode-hook 'line-number-mode)
+(setq font-lock-maximum-decoration t)
+(setq display-line-numbers-type 'relative)
 
 (use-package emacs
   :init
-  (setq yalinum-mode 1)
   (set-face-attribute 'default nil
-    :font "Monocraft"
-    :height 80
+    :font "Terminess Nerd Font"
+    :height 110
     ))
 
 (when window-system

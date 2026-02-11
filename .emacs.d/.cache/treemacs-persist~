@@ -1,0 +1,5 @@
+* Default
+** slstatus
+ - path :: ~/.config/slstatus
+** Projects
+ - path :: ~/GitHub/Projects

@@ -1,0 +1,2 @@
+(use-package gruvbox-theme)
+  (load-theme 'gruvbox :no-confirm)
