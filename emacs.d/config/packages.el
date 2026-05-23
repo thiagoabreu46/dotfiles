@@ -1,0 +1,15 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
+
+(setq package-selected-packages '(lsp-mode yasnippet lsp-treemacs helm-lsp
+				  projectile rainbow-mode vterm hydra flycheck
+				  company avy which-key helm-xref dap-mode
+				  cond-let llama with-editor seq transient
+				  compat
+				  ))
+					   
+(when (cl-find-if-not #'package-installed-p package-selected-packages)
+  (package-refresh-contents)
+  (mapc #'package-install package-selected-packages))
+

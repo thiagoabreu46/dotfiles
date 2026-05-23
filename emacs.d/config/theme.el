@@ -1,0 +1,27 @@
+;;=======================================
+;;Lavender theme
+;;(use-package lavender-theme)
+;;  (load-theme 'lavender :no-confirm)
+;;=======================================
+
+;;Moe theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/moe-theme.el/")
+(add-to-list 'load-path "~/.emacs.d/themes/moe-theme.el/")
+(require 'moe-theme)
+(require 'moe-theme-switcher)
+(require 'moe-theme-flavours)
+
+;; Show highlighted buffer-id as decoration. (Default: nil)
+(setq moe-theme-highlight-buffer-id t)
+
+;; Resize titles (optional).
+(setq moe-theme-resize-title-markdown '(1.5 1.4 1.3 1.2 1.0 1.0))
+(setq moe-theme-resize-title-org '(1.5 1.4 1.3 1.2 1.1 1.0 1.0 1.0 1.0))
+(setq moe-theme-resize-title-rst '(1.5 1.4 1.3 1.2 1.1 1.0))
+
+;; Choose a color for modeline.(Default: blue)
+(setq moe-theme-modeline-color 'magenta)
+
+;; Finally, apply moe-theme now.
+;; Choose what you like, (moe-light) or (moe-dark)
+(moe-light)
